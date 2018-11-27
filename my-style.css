@@ -1,0 +1,59 @@
+article > section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article > div {
+    font-family: monospace;
+}
+
+h2:first-child {
+    font-size: Large;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1:first-of-type {
+    font-size: xx-large;
+    color: darkgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 ~ img {
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+
+section:not(:first-of-type) {
+    clear: both;
+}
+
+div:nth-child(odd) {
+    background-color: beige;
+}
+
+div > h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h2 span {
+    text-align: center;
+    flex: 1;
+}
+
+h2 + form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+textarea ~ span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+form textarea, form input:not(:last-child) {
+    width: 300px;
+}
