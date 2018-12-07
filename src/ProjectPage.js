@@ -8,7 +8,7 @@ class ProjectPage extends Component {
             <Fragment>
                 <article>
                     <header>
-                        <h1>Neils' Work History</h1>
+                        <h1>Neils' Projects</h1>
                         <SiteNav />
                     </header>
                     <ProjectItem name="About Me" dates="11/12/2018 - Ongoing" description="I made a website about me! I started with simple HTML and CSS. From there I updated and upgraded the entire site as I learned new techniques and languages." />
