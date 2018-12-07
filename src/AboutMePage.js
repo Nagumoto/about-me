@@ -1,0 +1,74 @@
+import React, { Component, Fragment } from 'react'
+import { Link } from 'react-router-dom'
+import SiteNav from './SiteNav'
+
+class AboutMePage extends Component {
+    render = () => {
+        return (
+            <Fragment>
+                <header><SiteNav /></header>
+                <article>
+                    <section>
+                        <h1>Neils Madsen</h1>
+                        <img height="400px" src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/560719_10151267850325429_1880342904_n.jpg?_nc_cat=111&_nc_ht=scontent-ort2-2.xx&oh=50c53662a57dd4fb581258b35fd89740&oe=5C7A4259"
+                            alt="A green eye which contains a galaxy." />
+                        <span>
+                            <h2>Bio</h2>
+                        </span>
+                        I was born the second oldest of 9 children. I was homeschooled from birth to age 18 and my father was an
+                        entrepeneur. I worked for the family business producing audio-visual copies of my fathers legal training
+                        seminars, I also worked on the websites associated with my fathers work. I then spent some time in Detroit,
+                        Michigan on a mission for my church. After the mission I spent another year working for the family
+                        business. At the age of 20 I married my best friend who I'd met back when I was 12. I then followed her
+                        around for a few years while she was in the Air Force. I got a job in the oil field outside of Grand
+                        Junction, CO and my wife left the Air Force when we were having our first child. Now, 6 years later we've
+                        just had our third child and moved to West Jordan, Utah in hopes of getting finding a job that supports my
+                        family while also allowing me to actually spend time with my family. I've been a gamer since I could hold a
+                        controller and an avid reader ever since I picked up the first Animorphs book back in 1997. I also love to
+                        go snowboarding with my wife whenever we have time.
+                </section>
+                    <section>
+                        <h2>Why Helio</h2>
+                        I chose to study with Helio Training because my work in the oil field was no longer supporting my family. I
+                        also feel like my intelligence was being wasted in the oil field and I was putting my physical wellbeing at
+                        risk as well. I heard from family members that now was a perfect time to get back into web design and make
+                        a career out of it. After a bit of research of my own I decided it was time to make the change and begin
+                        mycareer!
+                </section>
+                    <section>
+                        <nav>
+                            <h2>Other Info:</h2>
+                                <ul>
+                                    <li>
+                                        <Link to={'/work-history'}>My work experience</Link>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/Nagumoto">My GitHub</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/neils-madsen-6a176512b/">My LinkedIn</a>
+                                    </li>
+                                </ul>
+                        </nav>
+                    </section>
+                    <section>
+                        <h2>Contact Me</h2>
+                        <form>
+                            <span>Name:<br />
+                                Email:<br />
+                                Request:<br /></span>
+                            <div>
+                                <input type="text" placeholder="Your Name" required /><br />
+                                <input type="text" placeholder="address@domain.com" required /><br />
+                                <textarea placeholder="Your request." rows="4"></textarea>
+                                <span><input type="submit" content="Submit" /></span>
+                            </div>
+                        </form>
+                    </section>
+                </article>
+            </Fragment>
+        )
+    }
+}
+
+export default AboutMePage
